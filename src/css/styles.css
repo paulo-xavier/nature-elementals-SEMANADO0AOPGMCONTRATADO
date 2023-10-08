@@ -1,0 +1,97 @@
+body{
+    background-color: #000000;
+    overflow: hidden; /* Remove the scrollbars */
+}
+
+main::after{ /* pseudoelement  -- It will create a pseudoelement after the tag main. It's a new element added to html but with css*/
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-height: 100vh;
+    width: 80vw;
+    background: linear-gradient(-233deg, #000 40%, rgba(0, 0, 0, 0) 65%)no-repeat;
+    
+}
+
+main .character{
+    display: none; /* hide elements / photos */
+    height: 100vh; /* viewport height, the height of the device that is accessing */ 
+}
+
+main .character.selected{ /* as this class contains 2 classes we cannot give a space between the, */
+    display: block; /* block means show / to present */ 
+}
+
+main .character .image{
+    width: 100%; /* The image must fit with 100% of the space available in the container */ 
+    height: 100%;
+    object-fit: cover; /* keeps the dimensions of the image, width and height, and will cover the element that we put the object fit (character). The images get better in position */
+}
+
+.content{
+    position: absolute; /* position an element in a absolute way in the page. It's similar like removing the element from the context it was. It's like removing the element and placing in a another paper and position the paper on the elements.  */
+    top: 0;
+    left: 120px;
+    display: flex;
+    flex-direction: column;/* place the elements forming a column */
+    justify-content: center; /* align the content vertically */
+    min-height: 100vh; /* The min height of this element will be the total of the screen. With this value we can center the element because now it has a height */
+    max-width: 380px;
+    z-index: 1; /* z is the profundity axe, this element will cover the elements with smaller z-index, in this case nobody has z-index so this element will cover everyone */
+}
+
+.content .name-character{
+    color: #ffffff;
+    font-size: 48px;
+    font-family: "Secular One";
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+.content .description {
+    color: #ffffff; 
+    font-family: "Rubik";
+    line-height: 24px; /* height between the lines */
+}
+
+.content .logo{
+    background-image: url("../images/symbol/logo2.png"); /* ../ return a folder */
+    background-size: cover; /* defines that the background must cover the available space */ 
+    height: 100px;
+    width: 230px;
+    margin-bottom: 35px;
+}
+
+.buttons{
+    position: fixed;
+    top: 0;
+    right: 0;
+    
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    width: 180px;
+    justify-content: center;
+    align-items: center; /* align items horizontally */ 
+    gap:10px;  /* it's a spacing that we can use when we applied a display flex */ 
+    background-color: rgba(0, 0, 0, 0.3 ); /* a = alpha */ 
+}
+
+.buttons .button{
+    border: none;
+    background:none;
+    cursor: pointer;
+    border-radius: 12%;
+}
+
+.buttons .button.selected{
+    transform: scale(1.2);
+    box-shadow: 0 0 10px #D9D9D9;
+}
+
+
+
+
+
+
