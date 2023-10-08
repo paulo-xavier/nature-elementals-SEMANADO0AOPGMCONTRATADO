@@ -25,8 +25,8 @@ This project was developed in this week of guidance supported by Roberto Dias an
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Website](https://paulo-xavier.github.io/nature-elementals-SEMANADO0AOPGMCONTRATADO/)
+- Live Site URL: [GitHub repository](https://github.com/paulo-xavier/nature-elementals-SEMANADO0AOPGMCONTRATADO)
 
 ## My process
 
